@@ -1,0 +1,46 @@
+version: '2'
+
+services:
+    remark:
+        build: .
+        image: umputun/remark42:latest
+        container_name: "remark42"
+        hostname: "remark42"
+        restart: always
+
+        logging:
+            driver: json-file
+            options:
+                max-size: "10m"
+                max-file: "5"
+
+        # uncomment to expose directly (no proxy)
+        #ports:
+        #  - "80:8080"
+
+        environment:
+            - REMARK_URL=https://remark42.senku.app
+            - SECRET=remark42
+            - SITE=remark42
+            - STORE_BOLT_PATH=/srv/var/db
+            - BACKUP_PATH=/srv/var/backup
+            - DEBUG=true
+            - AUTH_GOOGLE_CID=848527989258-gubsstae4h9oahsjjvgh5i7s6h9q5kqc.apps.googleusercontent.com
+            - AUTH_GOOGLE_CSEC=gMQ5hqSHAGqc1DD2AMWSzTu-
+            - AUTH_GITHUB_CID=d1ca9fcb7c93ff5e5f62
+            - AUTH_GITHUB_CSEC=ac9ee9985df4a904cc1ad665a003c51ab065ca19
+            - NOTIFY_TYPE=telegram
+            - NOTIFY_TELEGRAM_CHAN=660011274
+            - NOTIFY_TELEGRAM_TOKEN=1339468535:AAEA9f0epRvc-AWvRRMm9mKgiQHm8LQdLSM
+            - AUTH_FACEBOOK_CID
+            - AUTH_FACEBOOK_CSEC
+            - AUTH_DISQUS_CID
+            - AUTH_DISQUS_CSEC
+            - AUTH_ANON=true
+            - EMOJI=true
+            - ADMIN_SHARED_ID=github_20d3820a995422980f22ac34bdafda4ef56f66f5
+
+            - ADMIN_PASSWD=jylp1234
+        volumes:
+            - ./var:/srv/var
+        
