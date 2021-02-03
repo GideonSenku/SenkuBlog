@@ -115,6 +115,15 @@ Windows上最好用的播放器
 ### [Scoop](https://scoop.sh)
 既然说到了`Terminal`，怎么能少得了包管理器？`Scoop`，移步少数派[「一行代码」搞定软件安装卸载，用 Scoop 管理你的 Windows 软件](https://sspai.com/post/52496)
 
+### [winSCP](https://winscp.net/eng/docs/lang:chs) 
+WinSCP 是一个 Windows 环境下使用的 SSH 的开源图形化 SFTP 客户端。同时支持 SCP 协议。它的主要功能是在本地与远程计算机间安全地复制文件，并且可以直接编辑文件。
+
+### [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
+免费的SSH和Telnet客户端
+
+### [Everything](https://www.voidtools.com/zh-cn/)
+快速找到你的文件
+
 ## MacOS篇
 
 ### [LaunchBar](https://www.obdev.at/products/launchbar/index.html)
@@ -162,6 +171,9 @@ Windows都能在任意文件下打开终端，而Mac却需要这一款软件做�
 $ brew cask install iina
 ```
 
+### [MyCLI]()
+MyCLI 是一个 MySQL 的命令行客户端，可以实现自动补全（auto-completion）和语法高亮。
+
 ### [Downie](https://software.charliemonroe.net/downie/)
 Mac下强大的视频下载工具，可查看这篇[少数派的文章](https://sspai.com/item/4)
 - 支持YouTube、Vimeo 以及 Bilibili、优酷、爱奇艺等主流网站
@@ -191,6 +203,10 @@ MarkDown书写阅读工具，简单方便，快速上手，我的第一款MarkDo
 ### [Tencent Lemon Lite](https://apps.apple.com/cn/app/tencent-lemon-cleaner-lite/id1449962996?mt=12)
 腾讯良心，超级轻便的Mac垃圾清理工具
 
+### [Alfred](https://www.alfredapp.com/)
+- 自动化workflow
+- 效率
+- 启动器
 
 ## 社交工具
 
@@ -218,7 +234,8 @@ MarkDown书写阅读工具，简单方便，快速上手，我的第一款MarkDo
 - autopagerize 懒癌福音，自动翻页，从此不再需要下一页
 - LastPass 密码管理工具
 - Ad Guard 和网站上的垃圾广告Say no！
-
+- OneTab 整理你的标签页
+- FeHelper
 ## 网站篇
 - [docsify](https://docsify.js.org/#/zh-cn/) 一个神奇的文档网站生成器。
 - [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) 数据结构可视化，学习数据结构的好网址。
@@ -227,5 +244,9 @@ MarkDown书写阅读工具，简单方便，快速上手，我的第一款MarkDo
 - [Irepacks](https://lrepacks.net/?tdsourcetag=s_pctim_aiomsg) Windows软件网站
 - [figma](https://www.figma.com/) / [中国站地址点我](https://figmachina.com) UI设计网站，世界上第一个可以协作的设计工具。
 - [dribbble](https://dribbble.com/) 能让你发现世界上最顶尖的设计风格和具有创造力的网站
+
+## 其他
+- Postman
+- Docker
 
 ## 未完待续...
