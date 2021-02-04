@@ -47,5 +47,3 @@ undefined 就有无限可能
 ## ❤️ Sponsor
 
 如果你觉得本博客中的内容有帮助到你，欢迎支持赞助我继续创作，[赞助地址](https://www.afdian.net/@gidoensenku)
-
-我会定期更新赞助名单。
