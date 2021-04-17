@@ -110,10 +110,16 @@ menu:
           weight: -70
           pre: archives
 
+        - identifier: links
+          name: Links
+          url: links
+          weight: -60
+          pre: link
+
         - identifier: search
           name: Search
           url: search
-          weight: -60
+          weight: -50
           pre: search
 
 related:

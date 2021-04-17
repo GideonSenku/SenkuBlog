@@ -41,9 +41,6 @@ undefined 就有无限可能
 
 2021年1月，重新拾起博客，并由Hugo搭建，迁移旧的博客文章，并开启评论系统。
 
-## 🔗 Links
-- [Hades](https://blog.mayuko.cn)：Always believe that something wonderful is about to happen.
-
 ## ❤️ Sponsor
 
 如果你觉得本博客中的内容有帮助到你，欢迎支持赞助我继续创作，[赞助地址](https://www.afdian.net/@gidoensenku)
