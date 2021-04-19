@@ -1,6 +1,6 @@
 ---
 author: GideonSenku
-title: Vue3&Tsx学习
+title: Vue3&Tsx踩坑
 date: 2021-04-17
 tags:
     - 开发
