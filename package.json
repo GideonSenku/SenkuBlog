@@ -5,7 +5,6 @@
   "main": "upload.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "hugo -D",
     "upload": "node upload.js",
     "deploy": "npm run build && npm run upload"
   },
@@ -13,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "node-scp": "0.0.11",
+    "node-scp": "0.0.15",
     "ora": "^5.3.0"
   }
 }
