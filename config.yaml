@@ -1,141 +1,145 @@
-baseurl: https://blog.senku.app
-languageCode: en-us
-theme: hugo-theme-stack
-paginate: 5
-title: Senku's Blog
+baseurl = "https://blog.senku.app"
+languageCode = "en-us"
+theme = "hugo-theme-stack"
+paginate = 5
+title = "Senku's Blog"
 
 # Change it to your Disqus shortname before using
-disqusShortname: disqus_XIzm6MmzbV
+disqusShortname = "disqus_XIzm6MmzbV"
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn
-DefaultContentLanguage: zh-cn
+DefaultContentLanguage = "zh-cn"
 
-permalinks:
-    post: /p/:slug/
-    page: /:slug/
+[permalinks]
+  post = "/p/:slug/"
+  page = "/:slug/"
 
-params:
-    mainSections:
-        - post
-    featuredImageField: image
-    rssFullContent: true
-    favicon: favicon_32.ico
+[params]
+  mainSections = ["post"]
+  featuredImageField = "image"
+  rssFullContent = true
+  favicon = "favicon_32.ico"
 
-    footer:
-        since: 2020
-        customText:
+  [params.footer]
+    since = 2020
+    customText = ""
 
-    dateFormat:
-        published: Jan 02, 2006
-        lastUpdated: Jan 02, 2006 15:04 MST
+  [params.dateFormat]
+    published = "Jan 02, 2006"
+    lastUpdated = "Jan 02, 2006 15:04 MST"
 
-    sidebar:
-        emoji: 🌴
-        subtitle: 这只是一种可能，未必是唯一的可能
-        avatar:
-            local: true
-            src: img/avatar.jpeg
+  [params.sidebar]
+    emoji = "🌴"
+    subtitle = "这只是一种可能，未必是唯一的可能"
 
-    article:
-        math: false
-        license:
-            enabled: true
-            default: 本文最终解释权归作者所有，转载请注明出处。
+    [params.sidebar.avatar]
+      local = true
+      src = "img/avatar.jpeg"
 
-    comments:
-        enabled: true
-        provider: remark42
-        remark42:
-             host: https://remark42.senku.app/ # 为remark42服务端地址
-             site: remark42 # siteID，remark42是支持多个站点使用同一个服务端的
-             locale: zh # 目前好像就支持 zh：中文和 en：英文，详见remark42官方文档
+  [params.article]
+    math = false
 
-    widgets:
-        enabled:
-            - search
-            - archives
-            - tag-cloud
+    [params.article.license]
+      enabled = true
+      default = "本文最终解释权归作者所有，转载请注明出处。"
 
-        archives:
-            limit: 5
+  [params.comments]
+    enabled = true
+    provider = "remark42"
 
-        tagCloud:
-            limit: 10
+    [params.comments.remark42]
+      host = "https://remark42.senku.app/" # 为remark42服务端地址
+      site = "remark42" # siteID，remark42是支持多个站点使用同一个服务端的
+      locale = "zh" # 目前好像就支持 zh：中文和 en：英文，详见remark42官方文档
 
-    opengraph:
-        twitter:
-            # Your Twitter username
-            site: Gideon_Senku
+  [params.widgets]
+    enabled = ["search", "archives", "tag-cloud"]
 
-            # Available values: summary, summary_large_image
-            card: summary_large_image
+    [params.widgets.archives]
+      limit = 5
 
-    defaultImage:
-        opengraph:
-            enabled: true
-            local: true
-            src: img/avatar.jpeg
+    [params.widgets.tagCloud]
+      limit = 10
 
-    colorScheme:
-        # Display toggle
-        toggle: true
+  [params.opengraph]
+    [params.opengraph.twitter]
+      # Your Twitter username
+      site = "Gideon_Senku"
 
-        # Available values: auto, light, dark
-        default: auto
+      # Available values: summary, summary_large_image
+      card = "summary_large_image"
 
-    imageProcessing:
-        cover:
-            enabled: true
-        content:
-            enabled: true
+  [params.defaultImage]
+    [params.defaultImage.opengraph]
+      enabled = true
+      local = true
+      src = "img/avatar.jpeg"
 
-menu:
-    main:
-        - identifier: home
-          name: Home
-          url: /
-          weight: -100
-          pre: home
+  [params.colorScheme]
+    # Display toggle
+    toggle = true
 
-        - identifier: about
-          name: About
-          url: about
-          weight: -90
-          pre: user
+    # Available values: auto, light, dark
+    default = "auto"
 
-        - identifier: archives
-          name: Archives
-          url: archives
-          weight: -70
-          pre: archives
+  [params.imageProcessing]
+    [params.imageProcessing.cover]
+      enabled = true
+    [params.imageProcessing.content]
+      enabled = true
 
-        - identifier: links
-          name: Links
-          url: links
-          weight: -60
-          pre: link
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = -100
+  pre = "home"
 
-        - identifier: search
-          name: Search
-          url: search
-          weight: -50
-          pre: search
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "about"
+  weight = -90
+  pre = "user"
 
-related:
-    includeNewer: true
-    threshold: 60
-    toLower: false
-    indices:
-        - name: tags
-          weight: 100
+[[menu.main]]
+  identifier = "archives"
+  name = "Archives"
+  url = "archives"
+  weight = -70
+  pre = "archives"
 
-        - name: categories
-          weight: 200
+[[menu.main]]
+  identifier = "links"
+  name = "Links"
+  url = "links"
+  weight = -60
+  pre = "link"
 
-markup:
-    highlight:
-        noClasses: false
-    goldmark:
-        renderer:
-            unsafe: true
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "search"
+  weight = -50
+  pre = "search"
+
+[related]
+  includeNewer = true
+  threshold = 60
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "categories"
+    weight = 200
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+  [markup.goldmark.renderer]
+    unsafe = true
